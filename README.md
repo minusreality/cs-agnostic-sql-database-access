@@ -1,8 +1,8 @@
-This is an example of creating a platform agnostic serverless function. The instructions below are meant to be performed in the CLI on your platform and not necessarily in visual studio.
+This example is not yet complete, but will show how to provision and acces an SQL database from multiple cloud platforms.
 
-Working deployment targets:
-- AWS Lambda
-- Azure Functions
+The instructions below are meant to be performed in the CLI on your platform and not necessarily in visual studio.
+
+Working deployment targets: -NONE YET
 
 # Setup
 - Install .NET SDK: https://www.microsoft.com/net/download
