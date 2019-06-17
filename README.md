@@ -3,8 +3,11 @@ This example is not yet complete, but will show how to provision and acces an SQ
 The instructions below are meant to be performed in the CLI on your platform and not necessarily in visual studio.
 
 Working deployment targets: 
+
 Website: AWS[x] Azure[x]
+
 APIs: AWS[x] Azure[x]
+
 Database: AWS[] Azure[]
 
 # Setup
