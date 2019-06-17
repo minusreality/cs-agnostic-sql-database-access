@@ -2,16 +2,18 @@ This example is not yet complete, but will show how to provision and acces an SQ
 
 The instructions below are meant to be performed in the CLI on your platform and not necessarily in visual studio.
 
-Working deployment targets: -NONE YET
+Working deployment targets: 
+Website: AWS[x] Azure[x]
+APIs: AWS[x] Azure[x]
+Database: AWS[] Azure[]
 
 # Setup
 - Install .NET SDK: https://www.microsoft.com/net/download
 - Install npm: https://www.npmjs.com/get-npm
 
 - dotnet add package Microsoft.NET.Sdk.Functions --version 1.0.23
-- (skip) dotnet tool install -g Amazon.Lambda.Tools
+- (skip?) dotnet tool install -g Amazon.Lambda.Tools
 - npm install -g serverless
-- cd apis && npm i --save serverless-azure-functions
 - cd website && npm install --save serverless-finch
 
 # AWS Lambda
