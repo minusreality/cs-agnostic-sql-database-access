@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "StorageName": {
+      "type": "string",
+      "defaultValue": "cs-agnostic-sql-database-access",
+      "maxLength": 24
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2018-07-01",
+      "name": "[parameters('StorageName')]",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "displayName": "[parameters('StorageName')]"
+      },
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "kind": "StorageV2"
+    }
+  ],
+  "outputs": {}
+}

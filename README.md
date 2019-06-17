@@ -29,5 +29,10 @@ Working deployment targets: -NONE YET
     Note that the Client ID is the "name" attribute (ex "http://azure-cli-2018...")
 - az group create --name AgnosticHello-rg --location "Central US"
 - az storage account create --name agnostichellostorage --location centralus --resource-group AgnosticHello-rg --sku Standard_LRS
+- az storage account update -g AgnosticHello-rg -n agnostichellostorage --set kind=StorageV2
+- az storage account keys list --account-name agnostichellostorage --resource-group AgnosticHello-rg
+- $env:AZURE_STORAGE_KEY="YOUR_KEY_FROM_ABOVE"
+- $env:AZURE_STORAGE_ACCOUNT="agnostichellostorage"
+- az storage blob service-properties update --account-name agnostichellostorage --static-website  --index-document index.html
 - az functionapp create --resource-group AgnosticHello-rg --consumption-plan-location centralus --name AgnosticHello --storage-account agnostichellostorage --runtime dotnet
 - ./build.cmd azure
